@@ -8,3 +8,14 @@
 | Check balance    | POST     | /balance  | username: String<br>pw: String                                | 200 OK<br>301 Invalid username<br>302 Invalid admin_password | Increase/decrease the limit of tokens of user |
 | Take loan        | POST     | /takeLoan | username: String<br>pw: String<br>amount: float               | 200 OK<br>301 Invalid username<br>302 Invalid admin_password | Increase/decrease the limit of tokens of user |
 | Pay loan         | POST     | /payLoan  | username: String<br>pw: String<br>amount: float               | 200 OK<br>301 Invalid username<br>302 Invalid admin_password | Increase/decrease the limit of tokens of user |
+
+
+## Postman
+
+![]( bankAPI.png )
+
+## Docker
+```
+sudo docker-compose build
+sudo docker-compose up
+```
